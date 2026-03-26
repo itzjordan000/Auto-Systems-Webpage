@@ -10,13 +10,12 @@
 </head>
 <body>
 
-  <!-- ── Noise overlay ── -->
   <div class="noise"></div>
 
-  <!-- ── Nav ── -->
+  <!-- NAV -->
   <nav id="nav">
     <div class="nav-inner">
-      <a href="#" class="logo">Auto<span>Systems</span></a>
+      <a href="#" class="logo">Areo<span>Systems</span></a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
         <li><a href="#pricing">Pricing</a></li>
@@ -34,7 +33,7 @@
     </div>
   </nav>
 
-  <!-- ── Hero ── -->
+  <!-- HERO -->
   <section class="hero" id="home">
     <div class="hero-bg">
       <div class="orb orb1"></div>
@@ -59,251 +58,46 @@
         <a href="#services" class="btn-ghost">Our Services</a>
       </div>
     </div>
+
     <div class="hero-visual" data-animate>
       <div class="terminal">
         <div class="terminal-bar">
           <span class="dot red"></span>
           <span class="dot yellow"></span>
           <span class="dot green"></span>
-          <span class="terminal-title">auto-systems-bot</span>
+          <span class="terminal-title">areo-systems-bot</span>
         </div>
         <div class="terminal-body">
-          <div class="line"><span class="prompt">$</span> <span class="cmd" id="typedCmd"></span><span class="cursor">|</span></div>
+          <div class="line">
+            <span class="prompt">$</span>
+            <span class="cmd" id="typedCmd"></span>
+            <span class="cursor">|</span>
+          </div>
           <div class="output" id="termOutput"></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ── Stats bar ── -->
-  <div class="stats-bar">
-    <div class="stat">
-      <span class="stat-num" style="font-size:1.6rem">NEW</span>
-      <span class="stat-label">& Rising</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <span class="stat-num" data-count="100">0</span><span>%</span>
-      <span class="stat-label">Custom Built</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <span class="stat-num" data-count="24">0</span><span>/7</span>
-      <span class="stat-label">Support</span>
-    </div>
-    <div class="stat-divider"></div>
-    <div class="stat">
-      <span class="stat-num" data-count="48">0</span><span>h</span>
-      <span class="stat-label">Avg Delivery</span>
-    </div>
-  </div>
-
-  <!-- ── Services ── -->
-  <section class="services" id="services">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-tag">What We Build</p>
-        <h2>Our <span class="gradient-text">Services</span></h2>
-        <p class="section-sub">Every bot is written from scratch, no templates, no recycled code.</p>
-      </div>
-      <div class="services-grid">
-
-        <div class="service-card" data-animate>
-          <div class="service-icon">🛡️</div>
-          <h3>Moderation Bots</h3>
-          <p>Auto-mod, warning systems, role management, ban/kick with logging. Keep your server clean without lifting a finger.</p>
-          <ul class="service-features">
-            <li>Auto moderation</li>
-            <li>Warning & strike system</li>
-            <li>Full audit logs</li>
-          </ul>
-        </div>
-
-        <div class="service-card featured" data-animate>
-          <div class="featured-badge">Most Popular</div>
-          <div class="service-icon">⚙️</div>
-          <h3>Full Automation Bots</h3>
-          <p>Ticket systems, customer management, payment tracking, staff tools — a complete management suite for your Discord.</p>
-          <ul class="service-features">
-            <li>Ticket system</li>
-            <li>Customer & payment tracking</li>
-            <li>Staff management</li>
-            <li>Polls & giveaways</li>
-          </ul>
-        </div>
-
-        <div class="service-card" data-animate>
-          <div class="service-icon">🎉</div>
-          <h3>Engagement Bots</h3>
-          <p>Giveaways, polls, levelling systems, and custom commands to keep your community active and engaged.</p>
-          <ul class="service-features">
-            <li>Giveaway system</li>
-            <li>Polls & voting</li>
-            <li>XP & levelling</li>
-          </ul>
-        </div>
-
-        <div class="service-card" data-animate>
-          <div class="service-icon">🛒</div>
-          <h3>Commerce Bots</h3>
-          <p>Manage orders, track customers, send payment reminders, and handle your whole shop from within Discord.</p>
-          <ul class="service-features">
-            <li>Order management</li>
-            <li>Payment reminders</li>
-            <li>Customer registry</li>
-          </ul>
-        </div>
-
-        <div class="service-card" data-animate>
-          <div class="service-icon">🎨</div>
-          <h3>Custom Bots</h3>
-          <p>Got something specific in mind? We build fully bespoke bots to your exact spec — just tell us what you need.</p>
-          <ul class="service-features">
-            <li>Built to your spec</li>
-            <li>Any features you need</li>
-            <li>Fully hosted & managed</li>
-          </ul>
-        </div>
-
-        <div class="service-card" data-animate>
-          <div class="service-icon">🔧</div>
-          <h3>Bot Maintenance</h3>
-          <p>Already have a bot but need updates, fixes or new features added? We'll take it on and keep it running smooth.</p>
-          <ul class="service-features">
-            <li>Bug fixes</li>
-            <li>Feature additions</li>
-            <li>Ongoing support</li>
-          </ul>
-        </div>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Pricing ── -->
-  <section class="pricing" id="pricing">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-tag">Pricing</p>
-        <h2>Simple <span class="gradient-text">Pricing</span></h2>
-        <p class="section-sub">No hidden fees. Pay monthly, own it.</p>
-      </div>
-      <div class="pricing-grid">
-
-        <div class="pricing-card" data-animate>
-          <div class="plan-name">Starter</div>
-          <div class="plan-price">
-            <span class="currency">R$</span>500
-          </div>
-          <div class="plan-sub">per month · Robux or Nitro</div>
-          <div class="plan-divider"></div>
-          <ul class="plan-features">
-            <li>✓ Custom Discord bot</li>
-            <li>✓ Up to 100 commands</li>
-            <li>✓ Moderation features</li>
-            <li>✓ Basic automation</li>
-            <li>✓ Hosted & maintained by us</li>
-            <li>✓ 7-day support</li>
-          </ul>
-          <a href="#contact" class="btn-plan">Order Now</a>
-        </div>
-
-        <div class="pricing-card pro" data-animate>
-          <div class="pro-glow"></div>
-          <div class="plan-badge">Best Value</div>
-          <div class="plan-name">Pro</div>
-          <div class="plan-price">
-            <span class="currency">R$</span>700
-          </div>
-          <div class="plan-sub">per month · Robux or Nitro</div>
-          <div class="plan-divider"></div>
-          <ul class="plan-features">
-            <li>✓ Everything in Starter</li>
-            <li>✓ Unlimited commands</li>
-            <li>✓ Full ticket system</li>
-            <li>✓ Customer management</li>
-            <li>✓ Staff tools & logging</li>
-            <li>✓ Polls & giveaways</li>
-            <li>✓ Priority support</li>
-          </ul>
-          <a href="#contact" class="btn-plan pro">Order Now</a>
-        </div>
-
-
-
-      </div>
-
-      <div class="pricing-note">
-        Prices in <strong>Robux</strong> or <strong>Discord Nitro ($10 USD)</strong>. Billed monthly. Cancel anytime.
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Why us ── -->
-  <section class="why">
-    <div class="container">
-      <div class="why-grid">
-        <div class="why-text" data-animate>
-          <p class="section-tag">Why Auto Systems</p>
-          <h2>Built right,<br /><span class="gradient-text">first time.</span></h2>
-          <p>We don't use templates or resell other bots. Every bot we deliver is written clean from scratch, made specifically for your server and your needs.</p>
-          <div class="why-points">
-            <div class="why-point">
-              <span class="why-icon">⚡</span>
-              <div>
-                <strong>Fast delivery</strong>
-                <p>Most bots delivered within 48 hours of order.</p>
-              </div>
-            </div>
-            <div class="why-point">
-              <span class="why-icon">🔒</span>
-              <div>
-                <strong>You own the code</strong>
-                <p>Full source code handed over on delivery. No subscriptions, no lock-in.</p>
-              </div>
-            </div>
-            <div class="why-point">
-              <span class="why-icon">💬</span>
-              <div>
-                <strong>Real support</strong>
-                <p>Actual humans replying, not bots. We stay until it's working.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="why-visual" data-animate>
-          <div class="review-stack">
-            <div class="review-card">
-              <div class="review-stars">★★★★★</div>
-              <p>"The bot is absolutely fantastic — tons of features and customization. Payments are monthly but it's worth every robux."</p>
-              <div class="reviewer">— RyNg, Owner of GVRA</div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ── Contact ── -->
+  <!-- CONTACT -->
   <section class="contact" id="contact">
     <div class="container">
       <div class="contact-inner" data-animate>
         <p class="section-tag">Get In Touch</p>
         <h2>Ready to <span class="gradient-text">Order?</span></h2>
         <p>Join our Discord server to place an order, ask questions, or get a custom quote.</p>
-        <a href="https://discord.gg/xREAJ2WJQn" class="btn-discord" target="_blank" rel="noopener">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03z"/></svg>
+        <a href="https://discord.gg/xREAJ2WJQn" class="btn-discord" target="_blank" rel="noopener noreferrer">
           Join Our Discord
         </a>
       </div>
     </div>
   </section>
 
-  <!-- ── Footer ── -->
+  <!-- FOOTER -->
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <a href="#" class="logo">Auto<span>Systems</span></a>
+        <a href="#" class="logo">Areo<span>Systems</span></a>
         <p class="footer-copy">© 2026 Areo Systems. All rights reserved.</p>
         <div class="footer-links">
           <a href="#services">Services</a>
