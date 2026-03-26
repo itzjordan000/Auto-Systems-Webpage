@@ -21,7 +21,6 @@ mobileMenu.querySelectorAll('a').forEach(a => {
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry, i) => {
     if (entry.isIntersecting) {
-      // Stagger cards in a grid
       const siblings = entry.target.parentElement.querySelectorAll('[data-animate]');
       let delay = 0;
       siblings.forEach((el, idx) => { if (el === entry.target) delay = idx * 80; });
@@ -41,15 +40,17 @@ const counterObserver = new IntersectionObserver((entries) => {
       const target = parseInt(el.dataset.count);
       const duration = 1500;
       const start = performance.now();
+
       const animate = (now) => {
         const elapsed = now - start;
         const progress = Math.min(elapsed / duration, 1);
-        // Ease out cubic
         const eased = 1 - Math.pow(1 - progress, 3);
         el.textContent = Math.floor(eased * target);
+
         if (progress < 1) requestAnimationFrame(animate);
         else el.textContent = target;
       };
+
       requestAnimationFrame(animate);
       counterObserver.unobserve(el);
     }
@@ -61,12 +62,12 @@ document.querySelectorAll('[data-count]').forEach(el => counterObserver.observe(
 // ── Terminal typewriter ────────────────────────────────────────────────────────
 const sequences = [
   {
-    cmd: 'bot start --name "AutoSystems"',
+    cmd: 'bot start --name "AreoSystems"',
     output: [
       { text: '[OK] Connecting to Discord...', type: 'info', delay: 400 },
       { text: '[OK] MongoDB connected', type: 'success', delay: 800 },
       { text: '[OK] Registered 18 slash commands', type: 'success', delay: 1200 },
-      { text: '[READY] AutoSystems#1234 is online', type: 'success', delay: 1600 },
+      { text: '[READY] AreoSystems#1234 is online', type: 'success', delay: 1600 },
     ]
   },
   {
@@ -96,14 +97,15 @@ function typeSequence(seq) {
   cmdEl.textContent = '';
   outputEl.innerHTML = '';
 
-  // Type the command
   let i = 0;
+
   const typeInterval = setInterval(() => {
     cmdEl.textContent += cmd[i];
     i++;
+
     if (i >= cmd.length) {
       clearInterval(typeInterval);
-      // Show output lines with delays
+
       output.forEach(({ text, type, delay }) => {
         setTimeout(() => {
           const line = document.createElement('div');
@@ -112,8 +114,9 @@ function typeSequence(seq) {
           outputEl.appendChild(line);
         }, delay);
       });
-      // Queue next sequence
+
       const totalDelay = output[output.length - 1].delay + 2000;
+
       setTimeout(() => {
         seqIndex = (seqIndex + 1) % sequences.length;
         typeSequence(sequences[seqIndex]);
